@@ -95,12 +95,12 @@ Tenant=""
 
 [Account]
 # Set allowed the domain of email addresses
-# for example: Domain=["tvb.com", "tvb.hk"]
-# Then all email address with tvb.com and tvb.hk as the domain name suffix are allowed to log in
+# for example: Domain=["test.com", "test.hk"]
+# Then all email address with test.com and test.hk as the domain name suffix are allowed to log in
 # Domain and Email can be set to take effect at the same time
 Domain=[]
 
-# Set allowed email address, for example: Email=["aaa@tvb.com", "bbb@tvb.com"]
+# Set allowed email address, for example: Email=["aaa@test.com", "bbb@test.com"]
 # Set the full email address to allow logins
 # Email and Domain can be set to take effect at the same time
 Email=[]

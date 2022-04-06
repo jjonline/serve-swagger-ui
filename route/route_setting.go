@@ -2,8 +2,8 @@ package route
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/tvb-sz/serve-swagger-ui/app/controller"
-	"github.com/tvb-sz/serve-swagger-ui/stubs"
+	"github.com/jjonline/serve-swagger-ui/app/controller"
+	"github.com/jjonline/serve-swagger-ui/stubs"
 	"html/template"
 	"net/http"
 )

@@ -1,6 +1,6 @@
 package initializer
 
-import "github.com/tvb-sz/serve-swagger-ui/client"
+import "github.com/jjonline/serve-swagger-ui/client"
 
 // region Global handle initialization related
 

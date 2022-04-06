@@ -1,8 +1,8 @@
 package conf
 
 import (
-	"github.com/tvb-sz/serve-swagger-ui/define"
-	"github.com/tvb-sz/serve-swagger-ui/utils/cfg"
+	"github.com/jjonline/serve-swagger-ui/define"
+	"github.com/jjonline/serve-swagger-ui/utils/cfg"
 	"net/url"
 	"strings"
 )

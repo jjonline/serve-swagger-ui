@@ -3,8 +3,8 @@ package route
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/jjonline/go-lib-backend/logger"
-	"github.com/tvb-sz/serve-swagger-ui/app/service"
-	"github.com/tvb-sz/serve-swagger-ui/conf"
+	"github.com/jjonline/serve-swagger-ui/app/service"
+	"github.com/jjonline/serve-swagger-ui/conf"
 	"go.uber.org/zap"
 )
 

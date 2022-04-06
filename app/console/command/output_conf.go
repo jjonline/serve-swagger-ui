@@ -3,7 +3,7 @@ package command
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/tvb-sz/serve-swagger-ui/stubs"
+	"github.com/jjonline/serve-swagger-ui/stubs"
 )
 
 // init output_conf sub-command

@@ -3,9 +3,9 @@ package command
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/tvb-sz/serve-swagger-ui/app/console"
-	"github.com/tvb-sz/serve-swagger-ui/client/initializer"
-	"github.com/tvb-sz/serve-swagger-ui/conf"
+	"github.com/jjonline/serve-swagger-ui/app/console"
+	"github.com/jjonline/serve-swagger-ui/client/initializer"
+	"github.com/jjonline/serve-swagger-ui/conf"
 	"os"
 )
 

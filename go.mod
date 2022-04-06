@@ -1,6 +1,6 @@
-module github.com/tvb-sz/serve-swagger-ui
+module github.com/jjonline/serve-swagger-ui
 
-go 1.17
+go 1.18
 
 require (
 	github.com/fsnotify/fsnotify v1.5.1

@@ -3,7 +3,7 @@ package command
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/tvb-sz/serve-swagger-ui/conf"
+	"github.com/jjonline/serve-swagger-ui/conf"
 )
 
 // init version sub-command

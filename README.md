@@ -10,11 +10,11 @@ you can set the email or email domain to require authorization to browse documen
 
 Install using go version 1.16 and above
 ````
-go install github.com/tvb-sz/serve-swagger-ui@latest
+go install github.com/jjonline/serve-swagger-ui@latest
 ````
 
 Or, download binary file from GitHub release then install it
-1. Open [https://github.com/tvb-sz/serve-swagger-ui/releases](https://github.com/tvb-sz/serve-swagger-ui/releases)
+1. Open [https://github.com/jjonline/serve-swagger-ui/releases](https://github.com/jjonline/serve-swagger-ui/releases)
 2. Download the latest binary executable for your OS platform type
 3. Place the binary file in the environment variable directory, or add the directory where the binary file is located to the environment variable, for example `/usr/local/bin`
 
@@ -82,7 +82,7 @@ you will get the Google oauth client_id and client_secret
 
 edit your `.toml` suffix config file, see: [2.2、TOML config file](#22toml-config-file)
 
-1. set `Server.BaseURL` which is your server bind domain base URL, such as `https://swagger.tvb.com/`
+1. set `Server.BaseURL` which is your server bind domain base URL, such as `https://swagger.test.com/`
 2. set `Server.JwtKey` which is the JWT encryption key used to authenticate the cookie, any character 8 to 16 characters long
 3. set `Server.JwtExpiredTime` which is Authorization cookie validity period, how many seconds after the token is issued
 4. set `Google.ClientID` and `Google.ClientSecret` obtained in the first step
@@ -94,18 +94,18 @@ App information sample
 
 set your oauth callback URL in Google oauth console, see: [https://console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials)
 
-The callback URL splicing format is: `Server.BaseURL` + `callback/google`,  such as `https://swagger.tvb.com/callback/google`
+The callback URL splicing format is: `Server.BaseURL` + `callback/google`,  such as `https://swagger.test.com/callback/google`
 
 #### step4、set allowed login email address or email address domain 
 
 use `Account.Domain` set up authoritative domains,
 All email address under the set domain can be authorized, 
-such as `tvb.com`, then all email address with suffix used `tvb.com` can log in
+such as `test.com`, then all email address with suffix used `test.com` can log in
 
 > You can set multiple domain, so you need to use an array of square brackets
 
 use `Account.Email` specify one or more email addresses that can be authorized
-such as `webmaster@tvb.com`, then `webmaster@tvb.com` full match email address can log in
+such as `webmaster@test.com`, then `webmaster@test.com` full match email address can log in
 
 > You can set multiple email address, so you need to use an array of square brackets
 
@@ -124,7 +124,7 @@ such as `webmaster@tvb.com`, then `webmaster@tvb.com` full match email address c
 
 edit your `.toml` suffix config file, see: [2.2、TOML config file](#22toml-config-file)
 
-1. set `Server.BaseURL` which is your server bind domain base URL, such as `https://swagger.tvb.com/`
+1. set `Server.BaseURL` which is your server bind domain base URL, such as `https://swagger.test.com/`
 2. set `Server.JwtKey` which is the JWT encryption key used to authenticate the cookie, any character 8 to 16 characters long
 3. set `Server.JwtExpiredTime` which is Authorization cookie validity period, how many seconds after the token is issued
 4. set `Microsoft.ClientID`、`Microsoft.ClientSecret`、`Microsoft.Tenant`obtained in the first step
@@ -141,7 +141,7 @@ Click the hyperlink behind `Redirect URIs` and `Add a platform` for `Web`
 
 If it has been added, click `Add URI` to enter the callback URL
 
-The callback URL splicing format is: `Server.BaseURL` + `callback/microsoft`,  such as `https://swagger.tvb.com/callback/microsoft`
+The callback URL splicing format is: `Server.BaseURL` + `callback/microsoft`,  such as `https://swagger.test.com/callback/microsoft`
 
 #### step4、set allowed login email address or email address domain
 

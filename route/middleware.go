@@ -2,9 +2,9 @@ package route
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/tvb-sz/serve-swagger-ui/app/service"
-	"github.com/tvb-sz/serve-swagger-ui/conf"
-	"github.com/tvb-sz/serve-swagger-ui/render"
+	"github.com/jjonline/serve-swagger-ui/app/service"
+	"github.com/jjonline/serve-swagger-ui/conf"
+	"github.com/jjonline/serve-swagger-ui/render"
 	"net/http"
 )
 

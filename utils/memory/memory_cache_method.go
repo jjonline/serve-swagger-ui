@@ -3,7 +3,7 @@ package memory
 import (
 	"fmt"
 	memCache "github.com/jjonline/go-lib-backend/memory"
-	"github.com/tvb-sz/serve-swagger-ui/client"
+	"github.com/jjonline/serve-swagger-ui/client"
 	"reflect"
 	"time"
 )
