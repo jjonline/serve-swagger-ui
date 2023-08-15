@@ -7,5 +7,5 @@ import (
 
 //go:noinline
 func iniLogger() *logger.Logger {
-	return logger.New(conf.Config.Log.Level, conf.Config.Log.Path)
+	return logger.New(conf.Config.Log.Level, conf.Config.Log.Path, "module")
 }
