@@ -2,10 +2,10 @@ package command
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"github.com/jjonline/serve-swagger-ui/app/console"
 	"github.com/jjonline/serve-swagger-ui/client/initializer"
 	"github.com/jjonline/serve-swagger-ui/conf"
+	"github.com/spf13/cobra"
 	"os"
 )
 

@@ -1,7 +1,8 @@
 package render
 
 // 错误码定义：利用go工具链 generate 自动生成错误码映射map
-//  -- 定义CE类型并通过注释给出对应文案
+//
+//	-- 定义CE类型并通过注释给出对应文案
 const (
 	SuccessCode     = 0
 	UnknownError CE = -1 // 未知错误

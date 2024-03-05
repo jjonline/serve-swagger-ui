@@ -2,8 +2,8 @@ package command
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"github.com/jjonline/serve-swagger-ui/conf"
+	"github.com/spf13/cobra"
 )
 
 // init version sub-command

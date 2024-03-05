@@ -14,8 +14,9 @@ import (
 // !!警告!!
 
 // GetWithSetter 使用设置器setter方式获取本地內存緩存
-//  -- 若缓存存在则setter不会执行，若缓存不存在则setter执行并自动设置缓存
-//  -- 内存缓存是原始类型直接保存在本地内存中，所以读取出来依然是原始类型，仅仅需要 data.(Type)显式转换一下即可
+//
+//	-- 若缓存存在则setter不会执行，若缓存不存在则setter执行并自动设置缓存
+//	-- 内存缓存是原始类型直接保存在本地内存中，所以读取出来依然是原始类型，仅仅需要 data.(Type)显式转换一下即可
 func GetWithSetter(key string, setter func() (interface{}, error), timeout time.Duration) (data interface{}, err error) {
 	// 先从内存缓存中读取
 	data = Get(key)
@@ -38,7 +39,8 @@ func GetWithSetter(key string, setter func() (interface{}, error), timeout time.
 }
 
 // Set 设置一个memory本地内存缓存
-//  -- 内存缓存是原始类型直接保存在本地内存中，所以读取出来依然是原始类型，仅仅需要 data.(Type)显式转换一下即可
+//
+//	-- 内存缓存是原始类型直接保存在本地内存中，所以读取出来依然是原始类型，仅仅需要 data.(Type)显式转换一下即可
 func Set(key string, data interface{}, timeout time.Duration) error {
 	// 参数错误：缓存的数据为空
 	if data == nil || reflect.ValueOf(data).IsZero() {
@@ -54,7 +56,8 @@ func Set(key string, data interface{}, timeout time.Duration) error {
 }
 
 // Get memory本地内存缓存通过key读取一个缓存值
-//  -- 注意读取后值非nil时需要显式转换成为设置时的类型 data.(Type)
+//
+//	-- 注意读取后值非nil时需要显式转换成为设置时的类型 data.(Type)
 func Get(key string) interface{} {
 	data, ok := client.MemoryCache.Get(key)
 	if ok {
