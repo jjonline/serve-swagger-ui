@@ -18,5 +18,5 @@ func initGuzzle() *guzzle.Client {
 			MaxConnsPerHost:     50,
 			IdleConnTimeout:     120 * time.Second,
 		},
-	})
+	}, nil)
 }
